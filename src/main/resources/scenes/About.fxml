@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8.0.121">
+    <children>
+        <Label layoutX="271.0" layoutY="14.0" text="About:">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="247.0" layoutY="99.0" text="Instructions:">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="83.0" layoutY="50.0" text="Created By: Gregory Miguel Mathias @ titomathias73@gmail.com"/>
+        <Label layoutX="180.0" layoutY="78.0" text="Created For: Nekoosa School District"/>
+        <Label layoutX="33.0" layoutY="231.0"
+               text="- Press the corresponding &quot;Inventory Item&quot; button, or hit &quot;enter&quot;, to update">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="65.0" layoutY="251.0" text="the database with the current itemSchool.">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="33.0" layoutY="271.0"
+               text="- When finished updating the database, press &quot;Update Spreadsheet&quot;">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="64.0" layoutY="291.0" text="to fulfill exactly that command.">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="311.0"
+               text="- When finished changing the Spreadsheet, press &quot;Update Database&quot;">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="64.0" layoutY="331.0" text="to fulfill exactly that command.">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="351.0" text="- To generate QR barcodes, or Data Matrix barcodes,">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="64.0" layoutY="371.0" text="press the corresponding button to do so.">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="126.0" text="Ensure your inventory directory contains:"/>
+        <Label layoutX="52.0" layoutY="147.0" text="- HESQR, AMSQR, and NHSQR folders."/>
+        <Label layoutX="52.0" layoutY="168.0" text="- HESDM, AMSDM, and NHSDM folders."/>
+        <Label layoutX="52.0" layoutY="189.0"
+               text="- A spreadsheet named &quot;Inventories&quot; with three tabs named HES, AMS, and NHS."/>
+        <Label layoutX="52.0" layoutY="210.0"
+               text="- Three .csv files labeld &quot;HES&quot;, &quot;AMS&quot;, and &quot;NHS&quot;."/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,6 @@
+package item;
+
+public enum ItemCategoryTypes
+{
+	PHONE, PRINTER, PROJECTOR, SMARTBOARD, IPAD, CHROMEBOOK, LAPTOP, DESKTOP, OTHER
+}

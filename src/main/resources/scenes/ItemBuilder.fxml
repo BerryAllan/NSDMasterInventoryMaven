@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.*?>
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.ControllerItemBuilder">
+    <Label layoutX="75.0" layoutY="14.0" text="Customize up to 19 different fields and define a new item type.">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Label>
+
+    <Label layoutX="14.0" layoutY="103.0" text="Field 1: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="14.0" layoutY="144.0" text="Field 2: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="14.0" layoutY="185.0" text="Field 3: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="14.0" layoutY="226.0" text="Field 4: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="14.0" layoutY="267.0" text="Field 5: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="14.0" layoutY="308.0" text="Field 6: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="14.0" layoutY="349.0" text="Field 7: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="14.0" layoutY="390.0" text="Field 8: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="14.0" layoutY="431.0" text="Field 9: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="461.0" layoutY="108.0" text="Field 11: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="461.0" layoutY="149.0" text="Field 12: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="461.0" layoutY="190.0" text="Field 13: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="461.0" layoutY="231.0" text="Field 14: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="461.0" layoutY="272.0" text="Field 15: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="461.0" layoutY="313.0" text="Field 16: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="461.0" layoutY="354.0" text="Field 17: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="461.0" layoutY="395.0" text="Field 18: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="461.0" layoutY="436.0" text="Field 19: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="10.0" layoutY="472.0" text="Field 10: ">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+
+    <TextField fx:id="itemName" layoutX="90.0" layoutY="49.0" prefHeight="31.0" prefWidth="525.0"
+               promptText="Name your Item prefab here, eg: &quot;Accessory&quot;, &quot;Instrument&quot;, or &quot;Electronic&quot;."/>
+
+    <TextField fx:id="field0Text" layoutX="73.0" layoutY="108.0"/>
+    <ChoiceBox fx:id="field0Type" layoutX="268.0" layoutY="108.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field0TypeEdit" disable="true" layoutX="359.0" layoutY="108.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field0SortBy" layoutX="411.0" layoutY="108.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field1Text" layoutX="73.0" layoutY="149.0"/>
+    <ChoiceBox fx:id="field1Type" layoutX="268.0" layoutY="149.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field1TypeEdit" disable="true" layoutX="359.0" layoutY="149.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field1SortBy" layoutX="411.0" layoutY="149.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field2Text" layoutX="73.0" layoutY="190.0"/>
+    <ChoiceBox fx:id="field2Type" layoutX="268.0" layoutY="190.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field2TypeEdit" disable="true" layoutX="359.0" layoutY="190.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field2SortBy" layoutX="411.0" layoutY="190.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field3Text" layoutX="73.0" layoutY="231.0"/>
+    <ChoiceBox fx:id="field3Type" layoutX="268.0" layoutY="231.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field3TypeEdit" disable="true" layoutX="359.0" layoutY="231.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field3SortBy" layoutX="411.0" layoutY="231.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field4Text" layoutX="73.0" layoutY="272.0"/>
+    <ChoiceBox fx:id="field4Type" layoutX="268.0" layoutY="272.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field4TypeEdit" disable="true" layoutX="359.0" layoutY="272.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field4SortBy" layoutX="411.0" layoutY="272.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field5Text" layoutX="73.0" layoutY="313.0"/>
+    <ChoiceBox fx:id="field5Type" layoutX="268.0" layoutY="313.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field5TypeEdit" disable="true" layoutX="359.0" layoutY="313.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field5SortBy" layoutX="411.0" layoutY="313.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field6Text" layoutX="73.0" layoutY="354.0"/>
+    <ChoiceBox fx:id="field6Type" layoutX="268.0" layoutY="354.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field6TypeEdit" disable="true" layoutX="359.0" layoutY="354.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field6SortBy" layoutX="411.0" layoutY="354.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field7Text" layoutX="73.0" layoutY="395.0"/>
+    <ChoiceBox fx:id="field7Type" layoutX="268.0" layoutY="395.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field7TypeEdit" disable="true" layoutX="359.0" layoutY="395.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field7SortBy" layoutX="411.0" layoutY="395.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field8Text" layoutX="73.0" layoutY="436.0"/>
+    <ChoiceBox fx:id="field8Type" layoutX="268.0" layoutY="436.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field8TypeEdit" disable="true" layoutX="359.0" layoutY="436.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field8SortBy" layoutX="411.0" layoutY="436.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field9Text" layoutX="73.0" layoutY="477.0"/>
+    <ChoiceBox fx:id="field9Type" layoutX="268.0" layoutY="477.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field9TypeEdit" disable="true" layoutX="359.0" layoutY="477.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field9SortBy" layoutX="411.0" layoutY="477.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field10Text" layoutX="520.0" layoutY="116.0"/>
+    <ChoiceBox fx:id="field10Type" layoutX="714.0" layoutY="116.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field10TypeEdit" disable="true" layoutX="802.0" layoutY="116.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field10SortBy" layoutX="852.0" layoutY="116.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field11Text" layoutX="520.0" layoutY="157.0"/>
+    <ChoiceBox fx:id="field11Type" layoutX="714.0" layoutY="157.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field11TypeEdit" disable="true" layoutX="802.0" layoutY="157.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field11SortBy" layoutX="852.0" layoutY="157.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field12Text" layoutX="520.0" layoutY="198.0"/>
+    <ChoiceBox fx:id="field12Type" layoutX="714.0" layoutY="198.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field12TypeEdit" disable="true" layoutX="802.0" layoutY="198.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field12SortBy" layoutX="852.0" layoutY="198.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field13Text" layoutX="520.0" layoutY="236.0"/>
+    <ChoiceBox fx:id="field13Type" layoutX="714.0" layoutY="236.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field13TypeEdit" disable="true" layoutX="802.0" layoutY="236.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field13SortBy" layoutX="852.0" layoutY="236.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field14Text" layoutX="520.0" layoutY="277.0"/>
+    <ChoiceBox fx:id="field14Type" layoutX="714.0" layoutY="277.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field14TypeEdit" disable="true" layoutX="802.0" layoutY="277.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field14SortBy" layoutX="852.0" layoutY="277.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field15Text" layoutX="520.0" layoutY="318.0"/>
+    <ChoiceBox fx:id="field15Type" layoutX="714.0" layoutY="318.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field15TypeEdit" disable="true" layoutX="802.0" layoutY="318.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field15SortBy" layoutX="852.0" layoutY="318.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field16Text" layoutX="520.0" layoutY="359.0"/>
+    <ChoiceBox fx:id="field16Type" layoutX="714.0" layoutY="359.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field16TypeEdit" disable="true" layoutX="802.0" layoutY="359.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field16SortBy" layoutX="852.0" layoutY="359.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field17Text" layoutX="520.0" layoutY="400.0"/>
+    <ChoiceBox fx:id="field17Type" layoutX="714.0" layoutY="400.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field17TypeEdit" disable="true" layoutX="802.0" layoutY="400.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field17SortBy" layoutX="852.0" layoutY="400.0" prefWidth="30" text="0"/>
+
+    <TextField fx:id="field18Text" layoutX="520.0" layoutY="441.0"/>
+    <ChoiceBox fx:id="field18Type" layoutX="714.0" layoutY="441.0" prefHeight="31.0" prefWidth="85.0" value="TextField">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="TextField"/>
+                <String fx:value="ComboBox"/>
+                <String fx:value="DatePicker"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button fx:id="field18TypeEdit" disable="true" layoutX="802.0" layoutY="441.0" mnemonicParsing="false" text="Edit"/>
+    <TextField fx:id="field18SortBy" layoutX="852.0" layoutY="441.0" prefWidth="30" text="0"/>
+
+    <Button fx:id="saveItemPrefab" layoutX="509.0" layoutY="485.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="31.0"
+            prefWidth="187.0" text="Save Item Prefab"/>
+    <Label layoutX="40.0" layoutY="44.0" text="Name:">
+        <padding>
+            <Insets bottom="10.0" top="10.0"/>
+        </padding>
+    </Label>
+    <Label layoutX="391.0" layoutY="82.0" text="Sort Order"/>
+    <Label layoutX="817.0" layoutY="84.0" text="Sort Order"/>
+</AnchorPane>
